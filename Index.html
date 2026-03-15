@@ -1,7 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <style>
+<meta charset="UTF-8">
+<title>GPA Calculator</title>
+<link rel="stylesheet" href="style.css">
+<script src="script.js"></script>
+  <style>  
   body {
     font-family: Arial;
     margin: 20px;
@@ -17,13 +21,9 @@ input, select {
     margin-right: 5px;
 }
   </style>
-<meta charset="UTF-8">
-<title>GPA Calculator</title>
-<link rel="stylesheet" href="style.css">
-<script src="script.js"></script>
-</head>
+  </head>
 <body>
-  <script> 
+  <script>
   function addCourse() {
     var row = document.createElement('div');
     row.className = 'course-row';
@@ -68,8 +68,9 @@ function validateForm() {
     }
 
     return true;
-}
-  </script>
+} 
+   </script>  
+
 <h1>GPA Calculator</h1>
 
 <form action="calculate.php" method="post" onsubmit="return validateForm();">
